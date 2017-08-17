@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientControler">
+	<children>
+		<Pane fx:id="paneChat" layoutX="1.0" maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" visible="false">
+			<children>
+				<Button fx:id="buttonChatSend" disable="true" layoutX="519.0" layoutY="328.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="76.0" prefWidth="58.0" text="⇨" textAlignment="CENTER" textFill="WHITE" visible="true">
+               <font>
+                  <Font size="31.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+				<TextArea fx:id="textChatWrite" layoutX="282.0" layoutY="328.0" onKeyPressed="#sendEnter" prefHeight="76.0" prefWidth="241.0" promptText=". . . ✍ " />
+            <ListView fx:id="listChat" mouseTransparent="true" layoutX="122.0" layoutY="135.0" onMouseClicked="#update" prefHeight="269.0" prefWidth="129.0" />
+            <ImageView fitHeight="31.0" fitWidth="129.0" layoutX="122.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="288.0" layoutY="65.0" />
+            <BorderPane layoutX="282.0" layoutY="96.0" prefHeight="201.0" prefWidth="296.0">
+               <top>
+                  <TextField fx:id="textSelectedName" mouseTransparent="true" editable="false" prefHeight="27.0" prefWidth="296.0" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <TextArea fx:id="textChatRead" mouseTransparent="true" editable="false" prefHeight="163.0" prefWidth="296.0" promptText="To start a conversation choose a person from the list" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <ImageView fx:id="logout" fitHeight="24.0" fitWidth="24.0" layoutX="662.0" layoutY="14.0" onMouseClicked="#logoutEvent" onMouseEntered="#hoverLogout" onMouseExited="#noHoverLogout" opacity="0.46" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/logout.png" />
+               </image>
+               <effect>
+                  <Glow level="0.7" />
+               </effect>
+            </ImageView>
+			</children>
+		</Pane>
+		<Pane fx:id="paneConnect" maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0">
+			<children>
+				<Button fx:id="buttonConnect" layoutX="231.0" layoutY="322.0" mnemonicParsing="false" onAction="#showName" prefHeight="31.0" prefWidth="251.0" text="Connect">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font name="Gisha Bold" size="13.0" />
+               </font></Button>
+				<TextField fx:id="textIp" layoutX="229.0" layoutY="277.0" prefHeight="31.0" prefWidth="147.0" promptText="Ip">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+				<TextField fx:id="textPort" layoutX="379.0" layoutY="277.0" prefHeight="31.0" prefWidth="105.0" promptText="Port">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+				<TextField fx:id="textName" layoutX="229.0" layoutY="236.0" prefHeight="29.0" prefWidth="255.0" promptText="Name">
+               <font>
+                  <Font name="Gisha" size="15.0" />
+               </font></TextField>
+            <ImageView fitHeight="57.0" fitWidth="296.0" layoutX="202.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/logo.png" />
+               </image>
+            </ImageView>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

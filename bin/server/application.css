@@ -1,0 +1,144 @@
+#buttonConnect
+{
+	-fx-background-color: #1f97d8;	
+	-fx-border-color: #1f97d8;
+	-fx-border-radius: 0.98;
+	-fx-border-width: 5.0;
+	-fx-text-fill: white;
+}
+
+#paneConnect
+{
+	-fx-background-image: url("../../resources/backgroundServer.jpg");
+	-fx-background-size: 750.0,500.0;
+}
+
+#textName
+{
+	-fx-border-width:2.0;
+	-fx-border-color: #1f97d8;
+	-fx-border-radius: 4.0;
+	-fx-background-radius: 6.0;
+}
+
+#textIp
+{
+	-fx-border-color: #1f97d8;
+	-fx-border-width:2.0;
+	
+	-fx-border-radius: 4.0;
+	-fx-background-radius: 6.0;
+}
+
+#textPort
+{
+	-fx-border-color: #1f97d8;
+	-fx-border-width:2.0;
+	-fx-border-radius: 4.0;
+	-fx-background-radius: 6.0;
+}
+
+#labelConnectedPersons
+{
+	-fx-text-fill: white;
+	
+}
+
+#paneChat
+{
+	-fx-background-image: url("../../resources/backgroundServer.jpg");
+	
+	}
+
+#listChat
+{
+	-fx-border-color: #1f97d8;
+	-fx-border-radius: 0.98;
+	-fx-border-width: 2.0;
+	-fx-background-radius: 6.0;
+	-fx-background-image: url("persons.png");
+	-fx-background-position: left top;
+	-fx-background-size: 20,20;
+	-fx-padding: 20 0 0 0;
+	-fx-background-repeat: no-repeat;
+}
+
+#textChatRead
+{
+	
+	-fx-border-radius: 0.99;
+	-fx-background-color: white;
+	-fx-border-color: white;
+	-fx-background-radius: 0.99;
+}
+
+#textChatWrite
+{
+	-fx-border-color: #1f97d8;
+	-fx-border-radius: 0.98;
+	-fx-border-width: 2.0;
+	-fx-background-radius: 6.0;
+}
+
+#buttonChatSend
+{
+	-fx-border-color: #1f97d8;
+	-fx-border-radius: 0.98;
+	-fx-border-width: 2.0;
+	-fx-background-radius: 6.0;
+	-fx-background-color:  #1f97d8;
+}
+
+#textSelectedName
+{
+	-fx-border-radius: 0.99;
+	-fx-background-color: white;
+	-fx-border-color: white;
+	-fx-background-radius: 0.99;
+}
+
+#borderPane
+{
+	-fx-border-color: #1f97d8;
+	-fx-border-radius: 0.98;
+	-fx-border-width: 3.0;
+	-fx-background-radius: 6.0;
+
+}
+
+#paneServer
+{
+	-fx-background-image: url("../../resources/backgroundServer.jpg");
+}
+
+#textServer
+{
+	-fx-background-color: black;
+	-fx-border-color: grey;
+	-fx-border-radius: 6;
+	-fx-background-radius:7;
+	-fx-border-image-width: 7;
+	-fx-opacity: 0.5;
+	-fx-text-fill: green;
+}
+
+#listServer
+{
+	-fx-background-color: white;
+	-fx-border-color: grey;
+	-fx-border-radius: 2;
+	-fx-background-radius:2;
+	-fx-border-image-width: 7;
+	-fx-opacity: 0.2;
+	-fx-background-image: url("../../resources/login.png");
+	-fx-background-position: left top;
+	-fx-background-size: 40,40;
+	-fx-padding: 40 0 0 0;
+	-fx-background-repeat: no-repeat;
+	-fx-text-fill: white;
+}
+
+#buttonServer
+{
+	-fx-background-color: #5E5E5E;
+}
